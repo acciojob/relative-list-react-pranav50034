@@ -8,9 +8,9 @@ const App = () => {
                {/* Do not remove the main div */}
                <ol key={relativeList}>
                 {
-                  relativeList.map((item, index)=>{
+                  relativeList.map((relative, index)=>{
                       return(
-                        <li key={item}>{item}</li>
+                        <li key={relative}>{relative}</li>
                       )
                   })
                 }
