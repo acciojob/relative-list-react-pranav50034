@@ -1,21 +1,27 @@
-import React from 'react'
+import React from "react";
 
-const relativeList = [Pranav, Pranoti, Satyam, Saranag, Sahil, Darvesh];
+let list = [
+   "ram",
+   "shyam",
+   "hari",
+   "bhole",
+   "nath",
+   "gopal",
+   "krishn",
+   "kanha",
+   "shankar",
+];
 
 const App = () => {
-  return (
-    <div id="main">
-               {/* Do not remove the main div */}
-               <ol id="relativeList">
-                {
-                  relativeList.map((name, index)=>{
-                      return <li id={`relativeListItem${index + 1}`}>{name}</li>;
-                  })
-                }
-               </ol>
-    </div>
-  )
-}
+   return (
+      <div id="main">
+         <ol id="relativeList">
+            {list.map((name, indx) => (
+               <li id={`relativeListItem${indx + 1}`}>{name}</li>
+            ))}
+         </ol>
+      </div>
+   );
+};
 
-export default App
- 
+export default App;
