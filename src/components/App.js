@@ -1,6 +1,6 @@
 import React from 'react'
 
-const relativeList = ["relative1","relative2","relative3","relative4","relative5","relative6","relative7"]
+const relativeList = [Pranav, Pranoti, Satyam, Saranag, Sahil, Darvesh];
 
 const App = () => {
   return (
@@ -8,10 +8,8 @@ const App = () => {
                {/* Do not remove the main div */}
                <ol key="relativeList">
                 {
-                  relativeList.map((relative, index)=>{
-                      return(
-                        <li key={relative}>{relative}</li>
-                      )
+                  relativeList.map((name, index)=>{
+                      return <li id={`relativeListItem${index + 1}`}>{name}</li>;
                   })
                 }
                </ol>
